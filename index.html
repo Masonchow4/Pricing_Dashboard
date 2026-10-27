@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090c12" />
+    <meta name="description" content="Swyft competitive pricing intelligence dashboard, based on observed competitor research dated October 27, 2026." />
+    <title>Swyft | Pricing Intelligence</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Main navigation">
+        <a class="brand" href="#overview" aria-label="Swyft pricing intelligence home">
+          <span class="brand-mark">s</span><span><b>SWYFT</b><small>PRICING INTELLIGENCE</small></span>
+        </a>
+        <div class="workspace-label">WORKSPACE <span class="pulse"></span></div>
+        <nav class="nav-list">
+          <a class="nav-link active" href="#overview"><i>◈</i> Overview</a>
+          <a class="nav-link" href="#landscape"><i>◎</i> Competitors <span class="nav-count" id="nav-count">04</span></a>
+          <a class="nav-link" href="#pricing"><i>▥</i> Pricing analysis</a>
+          <a class="nav-link" href="#explorer"><i>⌁</i> Price explorer <span class="nav-live">LIVE</span></a>
+          <a class="nav-link" href="#opportunities"><i>✳</i> Opportunities</a>
+          <a class="nav-link" href="#strengths"><i>≋</i> Strengths & caveats</a>
+          <a class="nav-link" href="#sources"><i>↗</i> Sources & method</a>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="sidebar-note"><span class="note-icon">i</span><span>Competitive pricing only<br/><b>No demand or cost modeling</b></span></div>
+          <div class="profile-mini"><div class="avatar">MC</div><div><b>Mason Chowaniec</b><small>Research workspace</small></div><span class="more">···</span></div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="crumb">Workspaces <span>/</span> Pricing intelligence <span>/</span> <b>Swyft</b></div>
+          <div class="top-actions"><span class="date-chip"><span class="dot"></span> RESEARCH SNAPSHOT <b id="research-date">—</b></span><span class="icon-button" aria-hidden="true">♧</span><span class="user-chip" aria-hidden="true">MC <span>⌄</span></span></div>
+        </header>
+        <div id="app" aria-live="polite"><div class="loading">Loading research data…</div></div>
+        <footer class="footer">SWYFT COMPETITIVE INTELLIGENCE <span>•</span> INTERNAL RESEARCH VIEW <span>•</span> <span id="footer-date">—</span></footer>
+      </main>
+    </div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
